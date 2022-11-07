@@ -3,7 +3,7 @@ import { BlobServiceClient } from '@azure/storage-blob';
 
 async function main() {
 
-    const SAS_URL = process.env.SAS_URL;
+    const SAS_URL = process.env.ACCOUNT_SAS;
     const CONTAINER = process.env.CONTAINER;
 
     if (!SAS_URL) {
